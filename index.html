@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Some stupid game</title>
+    <script src="gameController.js">
+    </script>
+    <link rel="stylesheet" href="gameStyle.css" type="text/css">
+
+</head>
+
+<body onload="init();">
+    <table class="container">
+        <tr>
+            <td><div id="upperLeftDiv" style=height:200px;width:200px;background-color:#2185c5;text-align:center;><label id="upperLeft" class="innerText"></label></div></td>
+            <td><div id="upperRightDiv" style=height:200px;width:200px;background-color:#2185c5;text-align:center;><label id="upperRight" class="innerText"></label></div></td>
+        </tr>
+        
+        <tr>
+            <td><div id="lowerLeftDiv" style=height:200px;width:200px;background-color:#2185c5;text-align:center;><label id="lowerLeft" class="innerText"></label></div></td>
+            <td><div id="lowerRightDiv" style=height:200px;width:200px;background-color:#2185c5;text-align:center;><label id="lowerRight" class="innerText"></label></div></td>
+        </tr>
+    </table>
+    
+    <h2 class="timerHeader">Time remaining</h2>
+    <span id="timer" class="timerSpan"></span>
+    
+    <div class="btnsDiv">
+        <button  id="yesBtn" class="yesBtn" onclick="playerResponse(true);">YES</button>
+        <button id="noBtn" class="noBtn" onclick="playerResponse(false);">NO</button>
+        <button id="resetBtn" class="resetBtn" onclick="restart();">RESET</button>
+    </div>
+    <label id="scoreLabel"></label><br/>
+    <label id="challengesPlayedLabel"></label><br/>
+    
+    <!--<div  id="displayBoard" class="displayBoard">
+        <button id="startGame" class="startGameBtn" onclick="startGame();"> START </button>
+    </div>-->
+    
+</body>
+</html>
