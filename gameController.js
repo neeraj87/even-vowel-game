@@ -10,6 +10,7 @@
 var vowelArray = ["A", "E", "I", "O", "U"];
 var alphabetArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var divBackgroundColorsArray = ["#ff8f85", "#2dcc70", "#b1a1c6", "#ff0059", "#a500ff", "#ec26e6", "#f28e61", "#f0f261", "#61e5f2", "#4ff8bc", "#f8eb4f", "#f54ff8", "#c9f84f", "#f8cd4f", "#f8a14f"];
+var letterForegroundColorsArray = ["#990000", "#420772", "#07725f", "#726a07", "#720766", "#1c0772", "#077269", "#670772", "#076e72", "#710a6d", "#710a45", "#0a5571", "#4b710a", "#71490a", "#0a5e71"];
 var playerScore = 0;
 var challengesPlayed = 0;
 var timer = 30;
@@ -24,6 +25,8 @@ function init() {
     assignValueToLabel("lowerLeft", "lowerRight");
     randomiseDivBGColor("upperLeftDiv", "upperRightDiv");
     randomiseDivBGColor("lowerLeftDiv", "lowerRightDiv");
+    randomiseLetterFGColor("upperLeft", "upperRight");
+    randomiseLetterFGColor("lowerLeft", "lowerRight");
     document.getElementById("resetBtn").style.display =  "none";
 }
 
@@ -38,8 +41,13 @@ function assignValueToLabel(label1, label2) {
 }
 
 function randomiseDivBGColor(div1, div2) {
-    document.getElementById(div1).style.backgroundColor = divBackgroundColorsArray[randomiser(8, 0)];
-    document.getElementById(div2).style.backgroundColor = divBackgroundColorsArray[randomiser(8, 0)];
+    document.getElementById(div1).style.backgroundColor = divBackgroundColorsArray[randomiser(14, 0)];
+    document.getElementById(div2).style.backgroundColor = divBackgroundColorsArray[randomiser(14, 0)];
+}
+
+function randomiseLetterFGColor(label1, label2) {
+    document.getElementById(label1).style.color = letterForegroundColorsArray[randomiser(14, 0)];
+    document.getElementById(label2).style.color = letterForegroundColorsArray[randomiser(14, 0)];
 }
 
 function getSolutionForCurrentChallenge() {

@@ -52,6 +52,8 @@
         background: #32cd32;
         padding: 5px 10px 6px;
         color: #fff;
+        font-size: 200%;
+        font-family: Impact, fantasy;
         text-decoration: none;
         -moz-border-radius: 6px;
         -webkit-border-radius: 6px;
@@ -72,6 +74,8 @@
         background: #ad1414;
         padding: 5px 10px 6px;
         color: #fff;
+        font-size: 200%;
+        font-family: Impact, fantasy;
         text-decoration: none;
         -moz-border-radius: 6px;
         -webkit-border-radius: 6px;
@@ -86,11 +90,13 @@
     .resetBtn {
         margin: 0px auto;
         height: 50px;
-        width: 80px;
+        width: 100px;
         margin-left: 60px;
         display: inline-block;
         padding: 5px 10px 6px;
         color: #fff;
+        font-size: 200%;
+        font-family: Impact, fantasy;
         text-decoration: none;
         -moz-border-radius: 6px;
         -webkit-border-radius: 6px;
