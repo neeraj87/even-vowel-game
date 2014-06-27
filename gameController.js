@@ -16,9 +16,9 @@ var challengesPlayed = 0;
 var timer = 30;
 var interval;
 
-if(timer >= 0) {
+/*if(timer >= 0) {
     interval = setInterval(function(){myTimer()},1000);
-}
+}*/
 
 function init() {
     assignValueToLabel("upperLeft", "upperRight");
@@ -27,7 +27,7 @@ function init() {
     randomiseDivBGColor("lowerLeftDiv", "lowerRightDiv");
     randomiseLetterFGColor("upperLeft", "upperRight");
     randomiseLetterFGColor("lowerLeft", "lowerRight");
-    document.getElementById("resetBtn").style.display =  "none";
+    document.getElementById("startBtn").style.display =  "none";
 }
 
 function assignValueToLabel(label1, label2) {
@@ -71,7 +71,7 @@ function playerResponse(response) {
     init();
 }
 
-function restart() {
+function start() {
     clearInterval(interval);
     playerScore = 0;
     challengesPlayed = 0;
@@ -79,7 +79,7 @@ function restart() {
     document.getElementById("challengesPlayedLabel").innerHTML = "";
     document.getElementById("yesBtn").style.display =  "inline";
     document.getElementById("noBtn").style.display =  "inline";
-    document.getElementById("resetBtn").style.display =  "none";
+    document.getElementById("startBtn").style.display =  "none";
     timer = 30;
     interval = setInterval(function(){myTimer()},1000);
     init();
@@ -93,7 +93,7 @@ function displayScore() {
 function outOfTime() {
     document.getElementById("yesBtn").style.display =  "none";
     document.getElementById("noBtn").style.display =  "none";
-    document.getElementById("resetBtn").style.display =  "inline";
+    document.getElementById("startBtn").style.display =  "inline";
     displayScore();
 }
 

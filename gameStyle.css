@@ -87,7 +87,7 @@
         cursor: pointer;
     }
     
-    .resetBtn {
+    .startBtn {
         margin: 0px auto;
         height: 50px;
         width: 100px;
@@ -119,6 +119,13 @@
         margin: -100px auto;
         height: 150px;
         width: 200px;
+    }
+    
+    .instrDiv {
+        width: 200px;
+        height: 350px;
+        border: 2px solid red;
+        margin-left: 0px; 
     }
     
 </style>
