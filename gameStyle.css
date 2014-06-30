@@ -8,7 +8,7 @@
         background-color: #2185c5;
     }
         
-    .container {
+    .challengeTable {
         margin: 8% auto;
         height: auto;
         width: auto;
@@ -121,11 +121,13 @@
         width: 200px;
     }
     
-    .instrDiv {
-        width: 200px;
-        height: 350px;
-        border: 2px solid red;
-        margin-left: 0px; 
+    .messageDiv {
+        position:absolute;
+        left:50%;
+        width:400px;  /* adjust as per your needs */
+        height:400px;   /* adjust as per your needs */
+        margin-left:-200px;   /* negative half of width above */
+        background-color: red;
     }
     
 </style>

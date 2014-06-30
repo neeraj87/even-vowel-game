@@ -20,7 +20,23 @@ var interval;
     interval = setInterval(function(){myTimer()},1000);
 }*/
 
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode == 89) {
+        playerResponse(true);
+
+    }
+    else if (event.keyCode == 78) {
+        playerResponse(false);
+    }
+}, true);
+
 function init() {
+    document.getElementById("yesBtn").style.display =  "none";
+    document.getElementById("noBtn").style.display =  "none";
+    document.getElementById("timeRemainingTextHeader").style.display =  "none";
+}
+
+function generateChallenge() {
     assignValueToLabel("upperLeft", "upperRight");
     assignValueToLabel("lowerLeft", "lowerRight");
     randomiseDivBGColor("upperLeftDiv", "upperRightDiv");
@@ -68,7 +84,7 @@ function playerResponse(response) {
     } else if (response == false && conditionMatch == false) {
         playerScore++;
     }
-    init();
+    generateChallenge();
 }
 
 function start() {
@@ -79,10 +95,11 @@ function start() {
     document.getElementById("challengesPlayedLabel").innerHTML = "";
     document.getElementById("yesBtn").style.display =  "inline";
     document.getElementById("noBtn").style.display =  "inline";
+    document.getElementById("timeRemainingTextHeader").style.display =  "inline";
     document.getElementById("startBtn").style.display =  "none";
     timer = 30;
     interval = setInterval(function(){myTimer()},1000);
-    init();
+    generateChallenge();
 }
 
 function displayScore() {

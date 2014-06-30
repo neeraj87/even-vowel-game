@@ -8,9 +8,10 @@
 
 </head>
 
-<body>
-    <!--<div id="instructionsDiv" class="instrDiv"></div>-->
-    <table class="container">
+<body onload=init()>
+    <!--<div class="messageDiv"></div>-->
+    
+    <table class="challengeTable">
         <tr>
             <td><div id="upperLeftDiv" style=height:200px;width:200px;background-color:#2185c5;text-align:center;><label id="upperLeft" class="innerText"></label></div></td>
             <td><div id="upperRightDiv" style=height:200px;width:200px;background-color:#2185c5;text-align:center;><label id="upperRight" class="innerText"></label></div></td>
@@ -22,7 +23,7 @@
         </tr>
     </table>
     
-    <h2 class="timerHeader">Time remaining</h2>
+    <h2  id= "timeRemainingTextHeader" class="timerHeader">Time remaining</h2>
     <span id="timer" class="timerSpan"></span>
     
     <div class="btnsDiv">
@@ -32,7 +33,6 @@
     </div>
     <label id="scoreLabel"></label><br/>
     <label id="challengesPlayedLabel"></label><br/>
-    
     
 </body>
 </html>
