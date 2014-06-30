@@ -21,12 +21,13 @@ var interval;
 }*/
 
 document.addEventListener('keydown', function(event) {
-    if (event.keyCode == 89) {
-        playerResponse(true);
-
-    }
-    else if (event.keyCode == 78) {
-        playerResponse(false);
+    if (timer >= 0) {
+        if (event.keyCode == 89) {
+            playerResponse(true);
+        }
+        else if (event.keyCode == 78) {
+            playerResponse(false);
+        }
     }
 }, true);
 
@@ -34,6 +35,7 @@ function init() {
     document.getElementById("yesBtn").style.display =  "none";
     document.getElementById("noBtn").style.display =  "none";
     document.getElementById("timeRemainingTextHeader").style.display =  "none";
+    document.getElementById("table").style.visibility =  "hidden";
 }
 
 function generateChallenge() {
@@ -43,7 +45,7 @@ function generateChallenge() {
     randomiseDivBGColor("lowerLeftDiv", "lowerRightDiv");
     randomiseLetterFGColor("upperLeft", "upperRight");
     randomiseLetterFGColor("lowerLeft", "lowerRight");
-    document.getElementById("startBtn").style.display =  "none";
+    //document.getElementById("startBtn").style.display =  "none";
 }
 
 function assignValueToLabel(label1, label2) {
@@ -96,7 +98,9 @@ function start() {
     document.getElementById("yesBtn").style.display =  "inline";
     document.getElementById("noBtn").style.display =  "inline";
     document.getElementById("timeRemainingTextHeader").style.display =  "inline";
-    document.getElementById("startBtn").style.display =  "none";
+    document.getElementById("table").style.visibility =  "visible";
+    document.getElementById("startBtn").style.visibility =  "hidden";
+    document.getElementById("messageBoard").style.visibility =  "hidden";
     timer = 30;
     interval = setInterval(function(){myTimer()},1000);
     generateChallenge();
@@ -110,7 +114,9 @@ function displayScore() {
 function outOfTime() {
     document.getElementById("yesBtn").style.display =  "none";
     document.getElementById("noBtn").style.display =  "none";
-    document.getElementById("startBtn").style.display =  "inline";
+    document.getElementById("table").style.visibility =  "hidden";
+    document.getElementById("messageBoard").style.visibility =  "visible";
+    document.getElementById("startBtn").style.visibility = "visible";
     displayScore();
 }
 
