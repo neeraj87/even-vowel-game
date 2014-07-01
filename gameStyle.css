@@ -128,4 +128,8 @@
         padding-bottom: 5px;
     }
     
+    .socialBtn:hover {
+        height: 50px;
+        width: 50px;
+    }
 </style>
