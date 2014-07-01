@@ -16,10 +16,6 @@ var challengesPlayed = 0;
 var timer = 30;
 var interval;
 
-/*if(timer >= 0) {
-    interval = setInterval(function(){myTimer()},1000);
-}*/
-
 document.addEventListener('keydown', function(event) {
     if (timer >= 0) {
         if (event.keyCode == 89) {
@@ -45,7 +41,6 @@ function generateChallenge() {
     randomiseDivBGColor("lowerLeftDiv", "lowerRightDiv");
     randomiseLetterFGColor("upperLeft", "upperRight");
     randomiseLetterFGColor("lowerLeft", "lowerRight");
-    //document.getElementById("startBtn").style.display =  "none";
 }
 
 function assignValueToLabel(label1, label2) {

@@ -9,6 +9,15 @@
 </head>
 
 <body onload=init()>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
     <div id="messageBoard" class="messageDiv">
         <p>Click YES (or press y) if : the number in the upper two blocks is even AND letter in the lower two blocks is a vowel</p>
         <p>otherwise Click NO (or press n)</p><br/>
@@ -36,5 +45,14 @@
         <button  id="yesBtn" class="yesBtn" onclick="playerResponse(true);">YES</button>
         <button id="noBtn" class="noBtn" onclick="playerResponse(false);">NO</button>
     </div>
+    
+    <div class="socialMediaBtns">
+        <a href="https://www.facebook.com/jadhav.neeraj87" onclick="this.target='_blank'"><img src="img/facebook.png" alt="my facebook"/></a>
+        <a href="https://twitter.com/monsieurneeraj" onclick="this.target='_blank'"><img src="img/twitter.png" alt="my twitter"/></a>
+        <a href="https://www.linkedin.com/pub/neeraj-jadhav/32/9a6/30a" onclick="this.target='_blank'"><img src="img/linkedin.png" alt="my linkedin"/></a>
+        <a href="mailto:jadhav.neeraj87@gmail.com"><img src="img/email.png" alt="email me"/></a>
+    </div>
+    
+    <div class="fb-share-button" data-href="http://neeraj87.github.io/even-vowel-game/" data-width="50" data-type="button_count"></div>
 </body>
 </html>

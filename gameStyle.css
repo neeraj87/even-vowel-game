@@ -116,7 +116,16 @@
         width:400px;  /* adjust as per your needs */
         height:400px;   /* adjust as per your needs */
         margin-left:-200px;   /* negative half of width above */
-        //background-color: red;
     }
+    
+    /*.socialMediaBtns {
+        height: auto;
+        width: 14%;
+        background-color: #c0c0c0;
+    }
+    
+    .socialMediaBtns a {
+        padding-left: 5px;
+    }*/
     
 </style>
