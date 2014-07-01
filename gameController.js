@@ -27,13 +27,6 @@ document.addEventListener('keydown', function(event) {
     }
 }, true);
 
-function init() {
-    /*document.getElementById("yesBtn").style.display =  "none";
-    document.getElementById("noBtn").style.display =  "none";
-    document.getElementById("timeRemainingTextHeader").style.display =  "none";
-    document.getElementById("table").style.visibility =  "hidden";*/
-}
-
 function generateChallenge() {
     assignValueToLabel("upperLeft", "upperRight");
     assignValueToLabel("lowerLeft", "lowerRight");
