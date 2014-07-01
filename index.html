@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Some stupid game</title>
+    <title>Even Vowel Game</title>
     <script src="gameController.js">
     </script>
     <link rel="stylesheet" href="gameStyle.css" type="text/css">
@@ -10,9 +10,11 @@
 
 <body onload=init()>
     <div id="messageBoard" class="messageDiv">
-        <button id="startBtn" class="startBtn" onclick="start();">START</button>
+        <p>Click YES (or press y) if : the number in the upper two blocks is even AND letter in the lower two blocks is a vowel</p>
+        <p>otherwise Click NO (or press n)</p><br/>
         <label id="scoreLabel"></label><br/>
         <label id="challengesPlayedLabel"></label><br/>
+        <button id="startBtn" class="startBtn" onclick="start();">START</button>
     </div>
     
     <table id="table" class="challengeTable">
