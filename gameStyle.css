@@ -118,14 +118,10 @@
         margin-left:-200px;   /* negative half of width above */
     }
     
-    /*.socialMediaBtns {
-        height: auto;
-        width: 14%;
-        background-color: #c0c0c0;
+    .shareIcons {
+        padding-top: 5px;
+        top: 20%;
+        left: 0;
     }
-    
-    .socialMediaBtns a {
-        padding-left: 5px;
-    }*/
     
 </style>
