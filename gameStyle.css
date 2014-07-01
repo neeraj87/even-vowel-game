@@ -21,10 +21,6 @@
         font-family: Impact, fantasy;
     }
     
-    .buttonDiv {
-        margin: 8% auto;
-    }
-    
     .timerSpan {
         position: fixed;
         top: 60px;
@@ -88,10 +84,10 @@
     }
     
     .startBtn {
-        margin: 0px auto;
+        margin-left: 50%;
+        top: 50%;
         height: 50px;
         width: 100px;
-        margin-left: 60px;
         display: inline-block;
         padding: 5px 10px 6px;
         color: #fff;
@@ -108,13 +104,6 @@
         cursor: pointer;
     }
     
-    .displayBoard {
-        margin: 8% auto;
-        border: 2px solid red;
-        height: 100px;
-        width: 150px;
-    }
-    
     .btnsDiv {
         margin: -100px auto;
         height: 150px;
@@ -127,7 +116,7 @@
         width:400px;  /* adjust as per your needs */
         height:400px;   /* adjust as per your needs */
         margin-left:-200px;   /* negative half of width above */
-        background-color: red;
+        //background-color: red;
     }
     
 </style>
