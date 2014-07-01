@@ -119,9 +119,12 @@
     }
     
     .shareIcons {
-        padding-top: 5px;
         top: 20%;
         left: 0;
+    }
+    
+    .shareIcons div {
+        padding-bottom: 5px;
     }
     
 </style>
