@@ -12,6 +12,7 @@
         margin: 8% auto;
         height: auto;
         width: auto;
+        visibility: hidden;
     }
     
     .innerText {
@@ -37,6 +38,7 @@
         color: #990000;
         font-family: Impact, fantasy;
         font-size: 200%;
+        display: none;
     }
     
     .yesBtn {
@@ -44,7 +46,7 @@
         height: 50px;
         width: 80px;
         margin-left: 10px;
-        display: inline-block;
+        display: none;
         background: #32cd32;
         padding: 5px 10px 6px;
         color: #fff;
@@ -66,7 +68,7 @@
         height: 50px;
         width: 80px;
         margin-left: 10px;
-        display: inline-block;
+        display: none;
         background: #ad1414;
         padding: 5px 10px 6px;
         color: #fff;
